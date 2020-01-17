@@ -72,9 +72,15 @@ namespace CalculatorApp
             return num1 * num2;
         }
 
-        public static int Divide(int num1, int num2)
+        public static double Divide(double numorator, double divisor)
         {
-            return num1 / num2;
+            if(divisor == 0)
+            {
+                Console.WriteLine("You cannot divide by zero dummy!");
+                return 0;
+            }
+
+            return numorator / divisor;
         }
 
     }
